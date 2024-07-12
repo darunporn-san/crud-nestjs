@@ -1,4 +1,7 @@
+import { IsString,IsNumber,IsOptional } from "class-validator";
 export class CreatePostDto {
-    readonly title: String;
-    readonly desc: String;
+    @IsString()
+    readonly title: string;
+    @IsString()
+    readonly desc: string;
 }

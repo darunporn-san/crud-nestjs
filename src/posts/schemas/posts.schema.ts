@@ -5,6 +5,7 @@ export type PostsDocument = Posts & Document;
 
 @Schema()
 export class Posts {
+    
   @Prop({ required: true })
   title: string;
 
